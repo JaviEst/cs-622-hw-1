@@ -1,12 +1,12 @@
 
-| CS-665       | Software Design & Patterns |
-|--------------|----------------------------|
-| Name         | Javier Esteban de Celis    |
-| Date         | 09/05/2025                 |
-| Course       | Fall                       |
-| Assignment # | 1                          |
+| CS-622       | Advanced Programming Techniques |
+|--------------|---------------------------------|
+| Name         | Javier Esteban de Celis         |
+| Date         | 09/05/2025                      |
+| Course       | Fall                            |
+| Homework #   | 1                               |
 
-# Assignment Overview (TODO)
+# Homework Overview (TODO)
 Please add a paragraph or two overviewing the objectives of the assignment.
 
 # GitHub Repository Link:
