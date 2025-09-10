@@ -1,6 +1,6 @@
 name: Java CI
 
-# Trigger the workflow on push or pull request for any branch
+# Trigger the workflow on push for the main branch or pull request for any branch
 on:
   push:
     branches:
