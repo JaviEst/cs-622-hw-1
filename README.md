@@ -6,25 +6,38 @@
 | Course       | Fall                            |
 | Homework #   | 1                               |
 
-# Homework Overview (TODO)
-Please add a paragraph or two overviewing the objectives of the assignment.
+# Homework Overview
+This project implements a simplified version of the Breakout arcade game using Java and object-oriented programming principles. The goal was to demonstrate the use of classes, inheritance, method overriding, and overloading, while designing a modular and maintainable game structure. The implementation focuses on core game mechanics, including a paddle controlled by the player, a bouncing ball, and a set of bricks to destroy. While the game is minimalistic, it is designed to be extensible so that additional features or game objects can be easily added in the future.
 
 # GitHub Repository Link:
-https://github.com/JaviEst/cs-665-assignment-1
+https://github.com/JaviEst/cs-622-hw-1
 
-# Implementation Description (TODO)
+# Implementation Description
+The game is structured around key object-oriented concepts:
+ - Inheritance and Polymorphism:
+   - GameObject is an abstract base class for all objects in the game, including Ball, Paddle, and Brick.
+   - Each subclass implements its own render() method, demonstrating method overriding for specific behaviors.
+   - The Game class also demonstrates method overloading by allowing to addObject for a game with not player but also adding objects for a specific player.
 
+ - Flexibility:
+   - New objects can be easily added by creating subclasses of GameObject and implementing the required method. The Game class maintains a single collection of GameObjects, which automatically supports any new object type without changes to core logic.
 
-For each assignment, please answer the following:
+ - Simplicity and Understandability:
+   - The code uses clear class and method names, follows Java naming conventions, and contains comments explaining the purpose of each class and method.
 
-- Explain the level of flexibility in your implementation, including how new object types can
-be easily added or removed in the future.
-- Discuss the simplicity and understandability of your implementation, ensuring that it is
-easy for others to read and maintain.
-- Describe how you have avoided duplicated code and why it is important.
-- If applicable, mention any design patterns you have used and explain why they were
-chosen.
+ - Avoid Code Duplication:
+   - The use of base classes and inheritance avoids repeating code for common behaviors like position handling and update mechanics.
 
+# Play Breakout
+To play the breakout game you will first need to compile the code by running the following command:
+```bash
+mvn clean compile
+```
+
+Once the above is successfuly ran, you can play the game by running the following command:
+```bash
+java -cp target/classes Main
+```
 
 # Maven Commands
 
